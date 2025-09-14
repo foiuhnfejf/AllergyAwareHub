@@ -1,0 +1,178 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+.logo span {
+  color: red;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.help-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 991px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px; 
+  }
+
+  .hero-left img {
+    height: auto;
+    width: 100%;
+    max-width: 400px; 
+    margin-bottom: 20px;
+  }
+
+  .hero-right h1 {
+    font-size: 28px;
+    margin-top: 20px; 
+  }
+
+  .hero-right p {
+    font-size: 15px;
+  }
+}
+
+
+
+/* ///////////////////////////////////////////////////// */
+
+
+.hero-alt {
+  padding: 60px 0;
+}
+
+.hero-alt h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.hero-alt .hero-text {
+  font-size: 1rem;
+  color: #555;
+  text-align: justify;
+  max-width: 90%;
+  margin: 0 auto; /* center block */
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .hero-alt h1 {
+    font-size: 2.3rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .hero-alt h1,
+  .hero-alt .hero-text {
+    margin-left: 40px;
+    margin-right: 20px;
+    text-align: left;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .hero-alt h1 {
+    font-size: 2.8rem;
+  }
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+
+.hero-symptoms h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;   /* default on mobile */
+}
+
+.hero-symptoms .symptoms-text {
+  font-size: 1rem;
+  color: #555;
+  text-align: justify;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .hero-symptoms h1 {
+    margin-left: 40px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 2.3rem;
+  }
+
+  .hero-symptoms .symptoms-text {
+    margin-left: 40px;
+    margin-right: 20px;
+    text-align: left;
+    max-width: 100%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .hero-symptoms h1 {
+    margin-left: 60px;   /* adjust for desktop */
+    margin-right: 40px;
+    text-align: left;
+  }
+
+  .hero-symptoms .symptoms-text {
+    margin-left: 60px;
+    margin-right: 40px;
+    text-align: left;
+    max-width: 95%;
+  }
+}
+
